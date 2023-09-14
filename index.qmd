@@ -1,0 +1,86 @@
+---
+title: "simple_quarto_website"
+bibliography: [reference.bib]
+format:
+  html:
+    embed-resources: true
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+# Heading-1
+
+This is a heading and there are some example text.
+
+## H2
+
+::: columns
+::: {.column width="40%"}
+Content in left column
+:::
+
+::: {.column width="60%"}
+Content in right column
+:::
+:::
+
+### H3
+
+-   This is a
+-   bulleted
+-   list
+
+## Blockquote
+
+> This is a quote.
+
+## Table
+
+| Syntax    | Description |
+|-----------|-------------|
+| Header    | Title       |
+| Paragraph | Text        |
+
+## Math Equation
+
+### Inline
+
+An allocation A is envy-free if, for every pair of agents $i, j \in N$, it holds that
+
+### Non-inline
+
+$$v_{i}(A_{i}) \ge v_{i}(A_{j})$$
+
+The concept of EFX was first introduced in 1996 by Brams and Taylor[@brams1996fair], who presented an algorithm for finding an EFX allocation for divisible goods. Since then, several extensions and variations of EFX have been proposed, including those by Lipton et al. (2004)[@lipton2004approximately].
+
+## Footnote
+
+Here is a footnote reference.[^1]
+
+[^1]: Here is the footnote.
+
+## Image
+
+### Image on computer
+
+![image1](images/figure-1.jpg)
+
+### Image from online
+
+![image2](https://www.markdownguide.org/assets/images/tux.png)
+
+### Video
+
+![](images/mov_bbb.mp4)
+
+## Mermaid Diagram
+
+```{r, message = FALSE, echo = FALSE}
+library(DiagrammeR)
+mermaid("
+graph LR
+    A-->B
+    ", height = '100%', width = '100%')
+```

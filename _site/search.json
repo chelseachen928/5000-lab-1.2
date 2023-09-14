@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "about.html#heading-2",
+    "href": "about.html#heading-2",
+    "title": "About",
+    "section": "Heading-2",
+    "text": "Heading-2\nThis is a small heading.\n\nHeading-3\nThis is a much smaller heading.\n\n\nBold\nThis is a bold text.\n\nimport seaborn as sns\nimport matplotlib.pyplot as plt\ndf = sns.load_dataset(\"penguins\")\nsns.set_theme(style = \"white\", palette = \"Pastel1\")\ng = sns.relplot(\ndata = df, \nx = \"bill_length_mm\", \ny = \"flipper_length_mm\", \nhue = \"species\",\ncol = \"island\",\ns = 200\n)\nplt.setp(g._legend.get_texts(), fontsize = 18)\nplt.setp(g._legend.get_title(), fontsize = 18)\nfor i in range(3):\n    g.axes[0, i].set_xlabel(\"Penguin bill length (mm)\", fontsize = 18) \ng.axes[0, 0].set_ylabel(\"Penguin flipper length (mm)\", fontsize = 18)\ng.axes[0, 0].set_title(\"Torgersen Island\", fontsize = 18)\ng.axes[0, 1].set_title(\"Biscoe Island\", fontsize = 18)\ng.axes[0, 2].set_title(\"Dream Island\", fontsize = 18)\nfor i in range(3):\n    g.axes[0, i].set_xticks([40, 50, 60])\n    g.axes[0, i].set_xticklabels([40, 50, 60], fontsize = 18)\ng.axes[0, 0].set_yticklabels([0, 170, 180, 190, 200, 210, 220, 230], fontsize = 18)\nplt.savefig(\"plot-1.pdf\", bbox_inches = \"tight\")"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "simple_quarto_website",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#h2",
+    "href": "index.html#h2",
+    "title": "simple_quarto_website",
+    "section": "H2",
+    "text": "H2\n\n\nContent in left column\n\nContent in right column\n\n\n\nH3\n\nThis is a\nbulleted\nlist"
+  },
+  {
+    "objectID": "index.html#blockquote",
+    "href": "index.html#blockquote",
+    "title": "simple_quarto_website",
+    "section": "Blockquote",
+    "text": "Blockquote\n\nThis is a quote."
+  },
+  {
+    "objectID": "index.html#table",
+    "href": "index.html#table",
+    "title": "simple_quarto_website",
+    "section": "Table",
+    "text": "Table\n\n\n\nSyntax\nDescription\n\n\n\n\nHeader\nTitle\n\n\nParagraph\nText"
+  },
+  {
+    "objectID": "index.html#math-equation",
+    "href": "index.html#math-equation",
+    "title": "simple_quarto_website",
+    "section": "Math Equation",
+    "text": "Math Equation\n\nInline\nAn allocation A is envy-free if, for every pair of agents \\(i, j \\in N\\), it holds that\n\n\nNon-inline\n\\[v_{i}(A_{i}) \\ge v_{i}(A_{j})\\]\nThe concept of EFX was first introduced in 1996 by Brams and Taylor(Brams and Taylor 1996), who presented an algorithm for finding an EFX allocation for divisible goods. Since then, several extensions and variations of EFX have been proposed, including those by Lipton et al. (2004)(Lipton, Markakis, and Mossel 2004)."
+  },
+  {
+    "objectID": "index.html#footnote",
+    "href": "index.html#footnote",
+    "title": "simple_quarto_website",
+    "section": "Footnote",
+    "text": "Footnote\nHere is a footnote reference.1"
+  },
+  {
+    "objectID": "index.html#image",
+    "href": "index.html#image",
+    "title": "simple_quarto_website",
+    "section": "Image",
+    "text": "Image\n\nImage on computer\n\n\n\nimage1\n\n\n\n\nImage from online\n\n\n\nimage2\n\n\n\n\nVideo\nVideo"
+  },
+  {
+    "objectID": "index.html#mermaid-diagram",
+    "href": "index.html#mermaid-diagram",
+    "title": "simple_quarto_website",
+    "section": "Mermaid Diagram",
+    "text": "Mermaid Diagram"
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "simple_quarto_website",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHere is the footnote.↩︎"
+  },
+  {
+    "objectID": "slides/slides.html#slide-1",
+    "href": "slides/slides.html#slide-1",
+    "title": "Slides",
+    "section": "Slide 1",
+    "text": "Slide 1\nThere are two images."
+  },
+  {
+    "objectID": "slides/slides.html#slide-2",
+    "href": "slides/slides.html#slide-2",
+    "title": "Slides",
+    "section": "Slide 2",
+    "text": "Slide 2\nThis is a slide.\n\nTurn off alarm\nGet out of bed"
+  },
+  {
+    "objectID": "slides/slides.html#slide-3",
+    "href": "slides/slides.html#slide-3",
+    "title": "Slides",
+    "section": "Slide 3",
+    "text": "Slide 3\nThis is a citation.(Lipton, Markakis, and Mossel 2004)\nThis is a python code plot.\n\n\n\n\n\n\n\nLipton, Richard J, Evangelos Markakis, and Elchanan Mossel. 2004. “On Approximately Fair Allocations of Indivisible Goods.” In ACM Conference on Electronic Commerce, 125–31. ACM."
+  }
+]
